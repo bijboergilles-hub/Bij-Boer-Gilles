@@ -1,0 +1,44 @@
+title: Bezoek op afspraak · Bij Boer Gilles
+description: Kom met je gezin een uurtje langs alle dieren van de kinderboerderij in Afsnee (Gent). Op afspraak, met een vrije bijdrage voor de vzw.
+nav: bezoek
+image: bezoek-pony
+---
+<div class="wrap page-hero">
+  <p class="eyebrow">Bezoek op afspraak</p>
+  <h1>Een uurtje bij alle dieren</h1>
+  <p class="lead">Met je gezin, of gewoon met z'n tweeën. Ik neem je mee langs iedereen op de boerderij.</p>
+  <div class="btns"><a class="btn" href="#aanvragen">Bezoek aanvragen</a></div>
+</div>
+
+<section class="alt">
+  <div class="wrap split">
+    <div>
+      <blockquote>"Alle diertjes zijn een beetje mijn kindjes en hebben allemaal een naam."</blockquote>
+      <p>Gezinnen leren de boerderij kennen via een afspraak. Ik neem een uurtje de tijd om jullie mee te nemen naar de dieren en erbij te gaan. We gaan op bezoek bij iedereen: de geitjes, de pony's, de varkentjes, de kippen en alle anderen.</p>
+      <p>We werken met een <strong>vrije bijdrage</strong>. Na de rondleiding mag je zelf bepalen wat je aan de vzw geeft om de boerderij te steunen.</p>
+      <p>Omdat ik bewust op afspraak werk, blijft het rustig voor de dieren en voor jullie. Er staan dus nooit tien gezinnen tegelijk aan het hek.</p>
+    </div>
+    <img src="assets/img/bezoek-selfie-s.webp" alt="Boer Gilles met een jongen en een geitje onder de overkapping" loading="lazy">
+  </div>
+</section>
+
+<section id="aanvragen">
+  <div class="wrap narrow">
+    <h2>Een bezoek aanvragen</h2>
+    <p>Laat weten wanneer je wil komen en met hoeveel, dan stel ik een moment voor.</p>
+    <form class="aanvraag" action="{{form_action}}" method="POST">
+      <input type="hidden" name="_subject" value="Website: aanvraag bezoek op afspraak">
+      <input type="hidden" name="_next" value="{{site_url}}/bedankt.html">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div><label for="b-dag">Welke dag past?</label><input id="b-dag" name="gewenste_dag" type="text" placeholder="bv. zaterdag 21/11 in de voormiddag" required></div>
+      <div><label for="b-aantal">Met hoeveel zijn jullie?</label><input id="b-aantal" name="aantal_personen" type="text" placeholder="bv. 2 volwassenen en 2 kinderen" required></div>
+      <div><label for="b-naam">Je naam</label><input id="b-naam" name="naam" autocomplete="name" required></div>
+      <div><label for="b-gsm">Gsm (voor WhatsApp)</label><input id="b-gsm" name="gsm" type="tel" autocomplete="tel"></div>
+      <div class="full"><label for="b-mail">E-mail</label><input id="b-mail" name="email" type="email" autocomplete="email" required></div>
+      <div class="full"><label for="b-vraag">Iets dat ik moet weten?</label><textarea id="b-vraag" name="bericht"></textarea></div>
+      <p class="full small">Je gegevens gebruik ik alleen om je aanvraag te beantwoorden. Zie <a href="privacy.html">privacy</a>.</p>
+      <button class="btn full" type="submit">Aanvraag versturen</button>
+    </form>
+  </div>
+</section>

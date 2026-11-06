@@ -1,0 +1,67 @@
+title: Groepen, vzw's en teams op de boerderij · Bij Boer Gilles
+description: Groepsbezoek, teamdag of begeleid traject op de kinderboerderij in Afsnee (Gent). Voor vzw's, zorginstellingen, jeugdgroepen en bedrijven die even willen vertragen tussen de dieren.
+nav: groepen
+image: groep-juichen
+---
+<div class="wrap page-hero">
+  <p class="eyebrow">Groepen, vzw's en teams</p>
+  <h1>Samen vertragen tussen de dieren</h1>
+  <p class="lead">Voor vzw's en zorginstellingen, jeugdbewegingen, verenigingen en bedrijven. Iedereen is hier welkom, op het tempo dat bij de groep past.</p>
+  <div class="btns"><a class="btn" href="#aanvragen">Groepsbezoek aanvragen</a></div>
+</div>
+
+<section style="padding-top:8px">
+  <div class="wrap">
+    <img src="assets/img/groep-juichen.webp" alt="Boer Gilles maakt een selfie met een grote groep die enthousiast juicht" style="border-radius:14px;width:100%;max-height:560px;object-fit:cover;object-position:center 35%">
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap split">
+    <div>
+      <h2>Vzw's en zorginstellingen</h2>
+      <p>Een groep die in een kring in het gras zit en de kippen uit de hand laat eten. Iemand die voor het eerst een geitje vasthoudt. Het zijn vaak de kleine momenten die het meest blijven hangen.</p>
+      <p>Ik pas het bezoek aan de groep aan: wie graag zit en kijkt, kan dat. Wie mee wil voeren en verzorgen, mag dat. Er is een overdekte plek om te eten en uit te rusten.</p>
+      <p>Voor een halve dag rekenen we €11 per deelnemer (minimum €210), begeleiders gratis. Jullie brengen zelf eten en drinken mee.</p>
+    </div>
+    <div class="gallery" style="grid-template-columns:1fr 1fr">
+      <figure><img src="assets/img/groep-kippen-s.webp" alt="Deelnemers zitten in het gras en voeren de kippen uit de hand" loading="lazy"></figure>
+      <figure><img src="assets/img/groep-geitje-s.webp" alt="Een man aait een bruin geitje" loading="lazy"></figure>
+      <figure><img src="assets/img/groep-kring-s.webp" alt="Een grote groep zit in een kring op het gras" loading="lazy"></figure>
+      <figure><img src="assets/img/groep-geitjes-mei-s.webp" alt="Een groep volwassenen rond de geitjes" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split rev">
+    <div>
+      <h2>Bedrijven en teams</h2>
+      <p>Even weg van de schermen en de vergaderingen. Op de boerderij werk je met je handen, kijk je naar dieren die geen haast hebben en praat je anders met elkaar.</p>
+      <p>Ik begeleid teamdagen, trainingen en groepstrajecten waarin we leren door te vertragen, te observeren en zelf te doen, eerder dan door uitleg. Dieren reageren op wie je bent, niet op je functie. Dat zegt vaak meer over samenwerken dan een dag in een zaal.</p>
+      <p>Elke teamdag stel ik samen met jullie op. Vertel wat je zoekt, dan maak ik een voorstel.</p>
+    </div>
+    <img src="assets/img/gilles-geitje-stal-s.webp" alt="Boer Gilles houdt een geitje vast in de stal" loading="lazy">
+  </div>
+</section>
+
+<section class="alt" id="aanvragen">
+  <div class="wrap narrow">
+    <h2>Een groepsbezoek of teamdag aanvragen</h2>
+    <form class="aanvraag" action="{{form_action}}" method="POST">
+      <input type="hidden" name="_subject" value="Website: aanvraag groep of team">
+      <input type="hidden" name="_next" value="{{site_url}}/bedankt.html">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div><label for="g-org">Organisatie of bedrijf</label><input id="g-org" name="organisatie" required></div>
+      <div><label for="g-soort">Soort groep</label><select id="g-soort" name="soort"><option>Vzw of zorginstelling</option><option>Bedrijf of team</option><option>Jeugdbeweging of vereniging</option><option>Andere</option></select></div>
+      <div><label for="g-aantal">Aantal deelnemers</label><input id="g-aantal" name="aantal_deelnemers" type="number" min="1" required></div>
+      <div><label for="g-periode">Gewenste periode of data</label><input id="g-periode" name="periode" required></div>
+      <div><label for="g-naam">Je naam</label><input id="g-naam" name="naam" autocomplete="name" required></div>
+      <div><label for="g-mail">E-mail</label><input id="g-mail" name="email" type="email" autocomplete="email" required></div>
+      <div class="full"><label for="g-vraag">Wat zoeken jullie?</label><textarea id="g-vraag" name="bericht" placeholder="bv. een halve dag met onze bewoners, of een teamdag rond samenwerken"></textarea></div>
+      <p class="full small">Je gegevens gebruik ik alleen om je aanvraag te beantwoorden. Zie <a href="privacy.html">privacy</a>.</p>
+      <button class="btn full" type="submit">Aanvraag versturen</button>
+    </form>
+  </div>
+</section>

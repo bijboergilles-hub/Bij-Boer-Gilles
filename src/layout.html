@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="nl-BE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{page_title}}</title>
+<meta name="description" content="{{page_description}}">
+<link rel="canonical" href="{{site_url}}/{{page_path}}">
+<meta property="og:title" content="{{page_title}}">
+<meta property="og:description" content="{{page_description}}">
+<meta property="og:image" content="{{site_url}}/assets/img/{{page_image}}.webp">
+<meta property="og:locale" content="nl_BE">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+{{page_head}}
+</head>
+<body>
+<a class="skip" href="#inhoud">Naar de inhoud</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="./">Bij Boer <span>Gilles</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Hoofdmenu">
+      <a href="kampen.html"{{cur_kampen}}>Kampen</a>
+      <a href="feestjes.html"{{cur_feestjes}}>Feestjes</a>
+      <a href="bezoek.html"{{cur_bezoek}}>Bezoek</a>
+      <a href="scholen.html"{{cur_scholen}}>Scholen</a>
+      <a href="groepen.html"{{cur_groepen}}>Groepen &amp; teams</a>
+      <a href="workshops.html"{{cur_workshops}}>Workshops</a>
+      <a href="over-ons.html"{{cur_over}}>Over ons</a>
+      <a class="btn" href="contact.html">Iets aanvragen</a>
+    </nav>
+  </div>
+</header>
+<main id="inhoud">
+{{content}}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h3>Bij Boer Gilles</h3>
+        <p>Een kleine kinder- en familieboerderij in Afsnee, aan de rand van Gent. Alles op afspraak, zodat er rust blijft voor de dieren en voor wie op bezoek komt.</p>
+        <p class="sign">Met dierlijke groetjes, Boer Gilles</p>
+      </div>
+      <div>
+        <h3>Langskomen</h3>
+        <ul>
+          <li>{{adres}}</li>
+          <li><a href="mailto:{{email}}">{{email}}</a></li>
+          <li><a href="{{instagram}}" rel="noopener">Instagram</a></li>
+          <li><a href="contact.html">Route en praktische info</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Meer</h3>
+        <ul>
+          <li><a href="over-ons.html#steun">Steun de boerderij</a></li>
+          <li><a href="over-ons.html#magi-soil">Onze producten: Magi Soil</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">© {{vzw}} · ondernemingsnummer {{ondernemingsnummer}} · maatschappelijke zetel Goedingenstraat 13, 9051 Gent</div>
+  </div>
+</footer>
+<script>
+document.querySelector('.menu-toggle').addEventListener('click',function(){var n=document.getElementById('nav');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o)});
+</script>
+</body>
+</html>

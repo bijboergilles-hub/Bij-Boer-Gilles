@@ -1,0 +1,63 @@
+title: Contact en route · Bij Boer Gilles
+description: Contact, route en praktische info voor de kinderboerderij Bij Boer Gilles in Afsnee (Gent). Bus, fiets, wat aantrekken en veelgestelde vragen.
+image: vuurkorf
+---
+<div class="wrap page-hero">
+  <p class="eyebrow">Contact</p>
+  <h1>Iets aanvragen of een vraag stellen</h1>
+  <p class="lead">Kies hieronder waarover het gaat. Voor feestjes, bezoeken, scholen en groepen vind je ook een eigen formulier op die pagina.</p>
+</div>
+
+<section style="padding-top:8px">
+  <div class="wrap split" style="align-items:start">
+    <form class="aanvraag" action="{{form_action}}" method="POST">
+      <input type="hidden" name="_subject" value="Website: contactformulier">
+      <input type="hidden" name="_next" value="{{site_url}}/bedankt.html">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="full"><label for="c-onderwerp">Waarover gaat het?</label>
+        <select id="c-onderwerp" name="onderwerp">
+          <option value="vraag">Een vraag</option>
+          <option value="kampen-2027">Interesse kampjes 2027</option>
+          <option value="feestje">Verjaardagsfeestje</option>
+          <option value="bezoek">Bezoek op afspraak</option>
+          <option value="school">Schoolbezoek</option>
+          <option value="groep">Groep, vzw of team</option>
+          <option value="workshops">Workshops</option>
+          <option value="magi-soil">Magi Soil</option>
+        </select></div>
+      <div><label for="c-naam">Je naam</label><input id="c-naam" name="naam" autocomplete="name" required></div>
+      <div><label for="c-gsm">Gsm (voor WhatsApp)</label><input id="c-gsm" name="gsm" type="tel" autocomplete="tel"></div>
+      <div class="full"><label for="c-mail">E-mail</label><input id="c-mail" name="email" type="email" autocomplete="email" required></div>
+      <div class="full"><label for="c-bericht">Je bericht</label><textarea id="c-bericht" name="bericht" required></textarea></div>
+      <p class="full small">Je gegevens gebruik ik alleen om je te antwoorden. Zie <a href="privacy.html">privacy</a>.</p>
+      <button class="btn full" type="submit">Versturen</button>
+    </form>
+    <div>
+      <h2>Langskomen</h2>
+      <p><strong>Bij Boer Gilles</strong><br>{{adres}}<br><a href="mailto:{{email}}">{{email}}</a></p>
+      <p>Alles gebeurt op afspraak. Kom dus niet zomaar langs, dan sta je misschien voor een gesloten hek terwijl ik bij de dieren ben.</p>
+      <h3>Zo geraak je hier</h3>
+      <ul>
+        <li><strong>Bus:</strong> halte Broekkantstraat, vlakbij de boerderij.</li>
+        <li><strong>Fiets:</strong> vanuit het centrum van Gent nog geen kwartier.</li>
+        <li><strong>Auto of bus:</strong> laat even weten dat je met de wagen of met een groepsbus komt, dan zeg ik waar je het best parkeert.</li>
+      </ul>
+      <p><a href="https://www.openstreetmap.org/search?query=Goedingenstraat%2013%2C%209051%20Gent" rel="noopener">Bekijk op de kaart</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap narrow">
+    <h2>Veelgestelde vragen</h2>
+    <details><summary>Kan ik zomaar langskomen?</summary><p>Nee, alles gebeurt op afspraak. Zo blijft het rustig voor de dieren en heb ik echt tijd voor jullie. Een <a href="bezoek.html">bezoek</a> vraag je eenvoudig aan.</p></details>
+    <details><summary>Wat trek ik best aan?</summary><p>Kleren die vuil mogen worden en laarzen. We zijn bijna altijd buiten. Bij regen of kou zijn warme kleren en reservekledij voor de kinderen een goed idee.</p></details>
+    <details><summary>Is er een binnenruimte?</summary><p>Er is een overdekte, beschutte plek met strobalen en tafels. Een klassieke binnenzaal is er niet. Dit is een echte boerderij.</p></details>
+    <details><summary>Wordt er rekening gehouden met allergieën?</summary><p>Zoveel mogelijk. Bij een zware allergie, waarbij ook sporen een probleem zijn, breng je best eigen eten mee.</p></details>
+    <details><summary>Hoe snel antwoord je?</summary><p>Meestal binnen een paar dagen. Ik antwoord graag via WhatsApp, dus laat gerust je gsm-nummer achter.</p></details>
+  </div>
+</section>
+<script>
+(function(){var o=new URLSearchParams(location.search).get('onderwerp');if(o){var s=document.getElementById('c-onderwerp');for(var i=0;i<s.options.length;i++){if(s.options[i].value===o){s.selectedIndex=i}}}})();
+</script>
