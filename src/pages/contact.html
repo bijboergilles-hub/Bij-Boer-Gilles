@@ -35,7 +35,7 @@ image: vuurkorf
     </form>
     <div>
       <h2>Langskomen</h2>
-      <p><strong>Bij Boer Gilles</strong><br>{{adres}}<br><a href="mailto:{{email}}">{{email}}</a></p>
+      <p><strong>Bij Boer Gilles</strong><br><a href="{{maps_url}}" rel="noopener">{{adres}}</a><br><a href="mailto:{{email}}">{{email}}</a></p>
       <p>Alles gebeurt op afspraak. Kom dus niet zomaar langs, dan sta je misschien voor een gesloten hek terwijl ik bij de dieren ben.</p>
       <h3>Zo geraak je hier</h3>
       <ul>
@@ -43,8 +43,15 @@ image: vuurkorf
         <li><strong>Fiets:</strong> vanuit het centrum van Gent nog geen kwartier.</li>
         <li><strong>Auto of bus:</strong> laat even weten dat je met de wagen of met een groepsbus komt, dan zeg ik waar je het best parkeert.</li>
       </ul>
-      <p><a href="https://www.openstreetmap.org/search?query=Goedingenstraat%2013%2C%209051%20Gent" rel="noopener">Bekijk op de kaart</a></p>
+      <p>Typ in je gps gewoon "Bij Boer Gilles", dan kom je altijd goed uit.</p>
+      <div class="btns"><a class="btn" href="{{maps_url}}" rel="noopener">Open in Google Maps</a><a class="btn ghost" href="{{waze_url}}" rel="noopener">Open in Waze</a></div>
     </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <iframe class="map" src="{{maps_embed}}" title="Kaart met de ligging van Bij Boer Gilles in Afsnee" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
   </div>
 </section>
 
