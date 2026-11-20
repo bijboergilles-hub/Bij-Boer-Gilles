@@ -7,7 +7,7 @@ image: bezoek-pony
   <p class="eyebrow">Bezoek op afspraak</p>
   <h1>Een uurtje bij alle dieren</h1>
   <p class="lead">Met je gezin, of gewoon met z'n tweeën. Ik neem je mee langs iedereen op de boerderij.</p>
-  <div class="btns"><a class="btn" href="#aanvragen">Bezoek aanvragen</a></div>
+  <div class="btns"><a class="btn" href="{{booking_url}}" target="_blank" rel="noopener">Kies een moment</a></div>
 </div>
 
 <section class="alt">
@@ -24,22 +24,10 @@ image: bezoek-pony
 
 <section id="aanvragen">
   <div class="wrap narrow">
-    <h2>Een bezoek aanvragen</h2>
-    <p>Laat weten wanneer je wil komen en met hoeveel, dan stel ik een moment voor.</p>
-    <form class="aanvraag" action="{{form_action}}" method="POST">
-      <input type="hidden" name="_subject" value="Website: aanvraag bezoek op afspraak">
-      <input type="hidden" name="_next" value="{{site_url}}/bedankt.html">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_autoresponse" value="{{autoresponse}}">
-      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <div><label for="b-dag">Welke dag past?</label><input id="b-dag" name="gewenste_dag" type="text" placeholder="bv. zaterdag 21/11 in de voormiddag" required></div>
-      <div><label for="b-aantal">Met hoeveel zijn jullie?</label><input id="b-aantal" name="aantal_personen" type="text" placeholder="bv. 2 volwassenen en 2 kinderen" required></div>
-      <div><label for="b-naam">Je naam</label><input id="b-naam" name="naam" autocomplete="name" required></div>
-      <div><label for="b-gsm">Gsm (voor WhatsApp)</label><input id="b-gsm" name="gsm" type="tel" autocomplete="tel"></div>
-      <div class="full"><label for="b-mail">E-mail</label><input id="b-mail" name="email" type="email" autocomplete="email" required></div>
-      <div class="full"><label for="b-vraag">Iets dat ik moet weten?</label><textarea id="b-vraag" name="bericht"></textarea></div>
-      <p class="full small">Je gegevens gebruik ik alleen om je aanvraag te beantwoorden. Zie <a href="privacy.html">privacy</a>.</p>
-      <button class="btn full" type="submit">Aanvraag versturen</button>
-    </form>
+    <h2>Kies zelf een moment</h2>
+    <p>In mijn agenda zie je meteen wanneer ik tijd heb. Elke dag tussen 8 en 18 uur, een bezoek duurt ongeveer een uur. Kies een moment dat jullie past, dan krijg je meteen een bevestiging.</p>
+    <p>Na het bezoek bepaal je zelf wat je aan de vzw geeft.</p>
+    <div class="btns"><a class="btn" href="{{booking_url}}" target="_blank" rel="noopener">Kies een moment</a></div>
+    <p class="small">Lukt geen enkel moment, of kom je met een grotere groep? <a href="contact.html">Stuur me een berichtje</a>, dan zoeken we samen iets.</p>
   </div>
 </section>
