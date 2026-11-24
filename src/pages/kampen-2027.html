@@ -1,0 +1,41 @@
+title: Kampjes 2027: zet je op de lijst · Bij Boer Gilles
+description: De inschrijvingen voor de boerderijkampjes van 2027 in Afsnee (Gent) openen op zondag 13 december. Zet je op de lijst en krijg als eerste de link.
+nav: kampen
+image: hero-groep-kippen
+---
+<div class="wrap page-hero">
+  <p class="eyebrow">Kampjes 2027</p>
+  <h1>Zet je op de lijst</h1>
+  <p class="lead">De inschrijvingen voor 2027 gaan open op zondag 13 december. Wie op de lijst staat, krijgt die dag als eerste de link.</p>
+</div>
+
+<section class="alt">
+  <div class="wrap narrow">
+    <h2>Wanneer zijn er kampjes?</h2>
+    <p>In alle schoolvakanties. Met Pasen zijn er twee kampweken: van dinsdag 30 maart tot vrijdag 2 april, en van maandag 5 tot vrijdag 9 april. In de zomer is er elke week een kamp.</p>
+    <p>Volle weken krijgen voorrang. Losse dagen bevestig ik twee weken voor de kampweek.</p>
+    <p>Een vaste leeftijd hebben we niet. Zodra je kindje zindelijk is en zelf zijn schoentjes aankrijgt, is het welkom. Meer over een kampdag lees je op de <a href="kampen.html">kampenpagina</a>.</p>
+  </div>
+</section>
+
+<section id="lijst">
+  <div class="wrap narrow">
+    <h2>Op de lijst</h2>
+    <p>Dit is nog geen inschrijving, maar zo mis je de opening niet. Je krijgt meteen een bevestiging per mail.</p>
+    <form class="aanvraag" action="{{form_action}}" method="POST">
+      <input type="hidden" name="_subject" value="Website: lijst kampen 2027">
+      <input type="hidden" name="_next" value="{{site_url}}/bedankt.html">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_autoresponse" value="{{autoresponse_lijst}}">
+      <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div><label for="l-naam">Je naam</label><input id="l-naam" name="naam" autocomplete="name" required></div>
+      <div><label for="l-gsm">Gsm (voor WhatsApp)</label><input id="l-gsm" name="gsm" type="tel" autocomplete="tel"></div>
+      <div class="full"><label for="l-mail">E-mail</label><input id="l-mail" name="email" type="email" autocomplete="email" required></div>
+      <div><label for="l-vakantie">Welke vakantie(s)?</label><input id="l-vakantie" name="vakantie" placeholder="bv. Pasen week 1, augustus" required></div>
+      <div><label for="l-kids">Hoeveel kindjes en hoe oud?</label><input id="l-kids" name="kinderen" placeholder="bv. 2 kindjes, 3 en 5 jaar" required></div>
+      <div class="full"><label for="l-vraag">Nog iets dat ik moet weten?</label><textarea id="l-vraag" name="bericht"></textarea></div>
+      <p class="full small">Je gegevens gebruik ik alleen om je over de kampjes te laten weten. Zie <a href="privacy.html">privacy</a>.</p>
+      <button class="btn full" type="submit">Zet me op de lijst</button>
+    </form>
+  </div>
+</section>
